@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+.container{
+    text-align: center;
+}
+h1{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, 
+    rgb(225, 224, 235) 0%, rgba(12,56,59,1) 35%, 
+    rgba(0,212,255,1) 100%);
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(224, 26, 26);
+}

@@ -1,0 +1,22 @@
+<div class="container center">
+
+  <h1>Just Calculate</h1>
+
+  <label for="">First Number:</label><br/>
+  <input (input)="getFirst(first.value)"type="text" name="num1" (change)="change1=false" #first/>
+  <br/>
+  <label for="">Second Number:</label><br/>
+  <input (input)="getSecond(second.value)"type="text" name="num2" (change)=" change1=false" #second/>
+  <hr/>
+  <div class="container" *ngIf="num1&&num2">
+  <button (click)="Add()" (click)="change1=true" class="btn btn-primary" >+</button>&nbsp;
+  <button (click)="Subtract()" (click)="change1=true" class="btn btn-primary" >-</button>&nbsp;
+  <button (click)="Multiply()" (click)="change1=true" class="btn btn-primary" >*</button>&nbsp;
+  <button (click)="Divide()"(click)="change1=true" class="btn btn-primary" >/</button>&nbsp;
+</div>
+<hr/>
+
+<div *ngIf="num1&&num2&&change1">
+  <input [value]="answer" type="text" />
+</div>
+</div>
